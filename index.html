@@ -1,0 +1,272 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Kiwi, lecteur de musique gratuit pour Android</title>
+<meta name="description" content="Kiwi est un lecteur de musique gratuit pour Android : un grand catalogue, les titres en entier, sans compte ni publicité. Tout reste sur votre téléphone.">
+<meta name="theme-color" content="#0E0F12">
+<meta name="color-scheme" content="dark">
+<meta property="og:title" content="Kiwi, lecteur de musique gratuit pour Android">
+<meta property="og:description" content="Un grand catalogue, les titres en entier, sans compte ni publicité.">
+<meta property="og:type" content="website">
+<meta property="og:image" content="captures/accueil.webp">
+<link rel="icon" type="image/svg+xml" href="kiwi-logo.svg">
+<link rel="stylesheet" href="style.css">
+<script src="main.js" defer></script>
+</head>
+<body>
+<a class="skip" href="#contenu">Aller au contenu</a>
+
+<header class="top">
+  <div class="wrap top-inner">
+    <a class="wordmark" href="#accueil" aria-label="Kiwi, haut de page">kiwi</a>
+    <nav class="top-nav" aria-label="Sections">
+      <a href="#fonctions">Fonctions</a>
+      <a href="#captures">Captures</a>
+      <a href="#installer">Installer</a>
+      <a href="#questions">Questions</a>
+    </nav>
+    <a class="btn btn-primary btn-small" href="#installer" data-download-top>Télécharger</a>
+  </div>
+</header>
+
+<main id="contenu">
+
+  <!-- Accueil : texte à gauche, deux téléphones à droite -->
+  <section id="accueil" class="hero">
+    <div class="wrap hero-inner">
+      <div class="hero-text">
+        <p class="pill">Gratuit · Sans pub · Sans compte</p>
+        <h1>Toute la musique,<br><span class="accent">rien d'autre.</span></h1>
+        <p class="lead">Kiwi est un lecteur de musique gratuit pour Android, pour écouter les titres en entier, en arrière-plan et hors ligne.</p>
+        <p class="lead-small">Un grand catalogue, un Flow qui ne s'arrête jamais, les paroles et leur traduction. Vos écoutes, vos playlists et vos titres téléchargés restent sur votre téléphone.</p>
+        <div class="hero-actions">
+          <a class="btn btn-primary" href="#installer" data-download-hero>
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+            <span data-download-hero-label>Télécharger pour Android</span>
+          </a>
+          <a class="btn btn-ghost" href="#fonctions">
+            <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 12h14m-5-5 5 5-5 5"/></svg>
+            Voir les fonctions
+          </a>
+        </div>
+        <p class="release-line" data-release-line>Android 7.0 ou plus récent</p>
+      </div>
+      <div class="hero-phones" aria-hidden="true">
+        <div class="phone phone-back"><img src="captures/lecteur.webp" width="540" height="1138" alt=""></div>
+        <div class="phone phone-front"><img src="captures/accueil.webp" width="540" height="1138" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <div class="wrap">
+    <aside class="notice" aria-label="Sources officielles">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3 4.5 6v5.5c0 4.6 3.2 8.4 7.5 9.5 4.3-1.1 7.5-4.9 7.5-9.5V6L12 3z"/><path d="m9 12 2 2 4-4"/></svg>
+      <div>
+        <p class="notice-title">Une seule source officielle</p>
+        <p>Kiwi se télécharge uniquement depuis ce site ou sa <a href="https://github.com/AdamSellin/kiwi-releases/releases" rel="noopener">page des versions sur GitHub</a>.</p>
+      </div>
+    </aside>
+  </div>
+
+  <!-- Trois engagements -->
+  <section class="promises" aria-label="Engagements">
+    <ul class="wrap promise-list">
+      <li><span class="promise-value">0</span><span class="promise-label">publicité</span></li>
+      <li><span class="promise-value">0</span><span class="promise-label">compte à créer</span></li>
+      <li><span class="promise-value">100&nbsp;%</span><span class="promise-label">sur votre téléphone</span></li>
+    </ul>
+  </section>
+
+  <!-- Fonctions -->
+  <section id="fonctions" class="features" aria-labelledby="fonctions-titre">
+    <div class="wrap">
+      <div class="panel">
+        <h2 id="fonctions-titre" class="section-title">Ce que fait Kiwi</h2>
+        <ul class="feature-grid">
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4.5 4.5"/></svg></span>
+            <h3>Un grand catalogue</h3>
+            <p>Titres, artistes, albums et playlists. Classements, nouveautés, genres, radios et une vingtaine de catégories à explorer.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M9 18V6l11-2v12"/><circle cx="6.5" cy="18" r="2.5"/><circle cx="17.5" cy="16" r="2.5"/></svg></span>
+            <h3>Les titres en entier</h3>
+            <p>En arrière-plan et écran verrouillé, avec les commandes au casque et dans la notification. Le lecteur s'ouvre et se ferme d'un geste.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 12a8 8 0 0 1 14-5.3M20 12a8 8 0 0 1-14 5.3"/><path d="M18 3v4h-4M6 21v-4h4"/></svg></span>
+            <h3>Votre Flow, sans fin</h3>
+            <p>Une liste de titres qui ne s'arrête jamais, tirée de vos goûts. Des ambiances (Chill, Soirée…) et des mixes inspirés par vos titres préférés.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg></span>
+            <h3>Hors ligne</h3>
+            <p>Téléchargez titres, albums et playlists avec leurs paroles. Les derniers titres écoutés restent en cache pour le métro ou la campagne.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 6h10M4 12h16M4 18h7"/></svg></span>
+            <h3>Paroles et traduction</h3>
+            <p>Paroles synchronisées, traduites dans votre langue en un appui, même pour les chansons en espagnol ou en anglais.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M5 20V10M12 20V4M19 20v-7"/><circle cx="5" cy="8" r="2"/><circle cx="12" cy="13" r="2"/><circle cx="19" cy="11" r="2"/></svg></span>
+            <h3>Le son à votre goût</h3>
+            <p>Égaliseur avec préréglages et qualité audio réglable, pour économiser vos données mobiles ou profiter du Wi-Fi.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4" y="5" width="16" height="15" rx="2"/><path d="M4 10h16M9 3v4M15 3v4"/></svg></span>
+            <h3>Votre mois en musique</h3>
+            <p>Votre artiste du mois, vos titres les plus écoutés et un Accueil qui suit vos goûts. Tout est calculé sur le téléphone.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="4.5" y="10.5" width="15" height="10" rx="2"/><path d="M8 10.5V7.5a4 4 0 0 1 8 0v3"/></svg></span>
+            <h3>Rien ne sort du téléphone</h3>
+            <p>Ni compte, ni serveur, ni pub, ni pistage. Sauvegardez votre bibliothèque dans un fichier quand vous voulez.</p>
+          </li>
+          <li class="feature">
+            <span class="chip"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 12a8 8 0 1 1-2.3-5.7M20 4v5h-5"/></svg></span>
+            <h3>Toujours à jour</h3>
+            <p>Kiwi prévient quand une nouvelle version sort et l'installe en quelques appuis. Pas besoin de revenir ici.</p>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- Captures -->
+  <section id="captures" class="shots" aria-labelledby="captures-titre">
+    <div class="wrap">
+      <h2 id="captures-titre" class="section-title">Un coup d'œil</h2>
+      <p class="section-lead">Captures de Kiwi avec un profil de démonstration.</p>
+    </div>
+    <div class="carousel">
+      <button class="carousel-btn carousel-prev" type="button" aria-label="Capture précédente" data-carousel-prev>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m15 5-7 7 7 7"/></svg>
+      </button>
+      <ul class="shot-strip" data-carousel>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/accueil.webp" width="540" height="1138" loading="lazy" decoding="async" alt="L'Accueil : vos artistes préférés, Découvrir, mixes inspirés par vos titres"></div></figure></li>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/lecteur.webp" width="540" height="1138" loading="lazy" decoding="async" alt="Le lecteur, aux couleurs de la pochette"></div></figure></li>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/flow.webp" width="540" height="1138" loading="lazy" decoding="async" alt="Votre Flow : une liste de titres sans fin, selon vos goûts"></div></figure></li>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/explorer.webp" width="540" height="1138" loading="lazy" decoding="async" alt="Explorer : classements, nouveautés, genres, radios et catégories"></div></figure></li>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/bibliotheque.webp" width="540" height="1138" loading="lazy" decoding="async" alt="La Bibliothèque : titres aimés, playlists, téléchargements"></div></figure></li>
+        <li><figure class="shot"><div class="shot-frame"><img src="captures/recherche.webp" width="540" height="1138" loading="lazy" decoding="async" alt="La recherche de titres, d'artistes, d'albums et de playlists"></div></figure></li>
+      </ul>
+      <button class="carousel-btn carousel-next" type="button" aria-label="Capture suivante" data-carousel-next>
+        <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m9 5 7 7-7 7"/></svg>
+      </button>
+    </div>
+    <div class="dots" data-carousel-dots aria-hidden="true"></div>
+  </section>
+
+  <!-- Installer -->
+  <section id="installer" class="install" aria-labelledby="installer-titre">
+    <div class="wrap">
+      <h2 id="installer-titre" class="section-title">Installer Kiwi en trois étapes</h2>
+      <p class="section-lead">Kiwi n'est pas sur le Play Store : il s'installe à partir d'un fichier APK, publié avec chaque version.</p>
+
+      <ol class="steps">
+        <li class="step">
+          <span class="step-num">1</span>
+          <h3>Télécharger</h3>
+          <p>Depuis le téléphone, touchez le bouton ci-dessous. Le navigateur peut prévenir que ce type de fichier est inhabituel : confirmez.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">2</span>
+          <h3>Installer</h3>
+          <p>Ouvrez le fichier. La première fois, Android demande d'<strong>autoriser cette source</strong> (« Installer des applis inconnues ») pour votre navigateur ou Fichiers : activez-la, revenez, puis touchez <strong>Installer</strong>.</p>
+        </li>
+        <li class="step">
+          <span class="step-num">3</span>
+          <h3>Écouter</h3>
+          <p>Choisissez un pseudo et 5 artistes : Kiwi prépare votre Accueil, votre Flow et vos mixes. Aucune inscription.</p>
+        </li>
+      </ol>
+
+      <div class="download">
+        <a class="btn btn-primary btn-wide" data-download href="https://github.com/AdamSellin/kiwi-releases/releases/latest" rel="noopener">
+          <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+          <span data-download-label>Télécharger Kiwi</span>
+        </a>
+        <p class="download-status" data-download-status aria-live="polite">Pour presque tous les téléphones Android.</p>
+        <a class="download-other" href="https://github.com/AdamSellin/kiwi-releases/releases" rel="noopener">Autres versions (anciens téléphones, tablettes…)</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Questions -->
+  <section id="questions" class="faq" aria-labelledby="questions-titre">
+    <div class="wrap faq-inner">
+      <h2 id="questions-titre" class="section-title">Questions fréquentes</h2>
+      <div class="faq-list">
+        <details>
+          <summary>Kiwi est-il vraiment gratuit ?</summary>
+          <p>Oui. Pas d'abonnement, pas de publicité, pas d'achat dans l'app. Kiwi est un projet personnel, sans but commercial, et un logiciel libre (licence GPL v3).</p>
+        </details>
+        <details>
+          <summary>Sur quels appareils fonctionne-t-il ?</summary>
+          <p>Sur les téléphones et tablettes Android 7.0 ou plus récents. Les versions pour Apple et Google TV ne sont pas encore prêtes.</p>
+        </details>
+        <details>
+          <summary>Puis-je écouter sans réseau ?</summary>
+          <p>Oui : téléchargez des titres, albums ou playlists, ils se lisent hors ligne avec leurs paroles. Les derniers titres écoutés restent aussi en cache, pour un réseau faible.</p>
+        </details>
+        <details>
+          <summary>Kiwi collecte-t-il mes données ?</summary>
+          <p>Non. Il n'y a ni compte ni serveur Kiwi : votre pseudo, vos goûts, vos playlists et votre historique restent sur le téléphone. Vous pouvez les sauvegarder dans un fichier et les importer sur un autre téléphone.</p>
+        </details>
+        <details>
+          <summary>D'où vient la musique ?</summary>
+          <p>Le catalogue (titres, pochettes, classements) vient de l'API publique Deezer. Kiwi n'héberge aucun fichier audio : il lit des contenus déjà publics. Les paroles viennent de LRCLIB, une base libre.</p>
+        </details>
+        <details>
+          <summary>Comment recevoir les nouvelles versions ?</summary>
+          <p>Kiwi prévient quand une nouvelle version est publiée et l'installe en quelques appuis (Paramètres &gt; Rechercher une mise à jour). Vos titres et playlists sont gardés.</p>
+        </details>
+        <details>
+          <summary>Ce site est-il la seule source officielle ?</summary>
+          <p>Oui, avec la page des versions sur GitHub. Kiwi n'est pas sur le Play Store : une app « Kiwi » trouvée ailleurs n'est pas la nôtre.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- Nouveautés de la dernière version (remplies par main.js) -->
+  <section class="news" aria-labelledby="nouveautes-titre" data-news hidden>
+    <div class="wrap">
+      <div class="panel">
+        <h2 id="nouveautes-titre" class="section-title">Quoi de neuf <span class="news-version" data-news-version></span></h2>
+        <ul class="news-list" data-news-list></ul>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<footer class="foot">
+  <div class="wrap foot-inner">
+    <a class="foot-brand" href="#accueil" aria-label="Kiwi, haut de page">
+      <img src="kiwi-logo.svg" alt="" width="28" height="28">
+      <span class="wordmark">kiwi</span>
+    </a>
+    <ul class="foot-links">
+      <li><a href="#fonctions">Fonctions</a></li>
+      <li><a href="#installer">Installer</a></li>
+      <li><a href="#questions">Questions</a></li>
+      <li><a href="https://github.com/AdamSellin/kiwi-releases/releases" rel="noopener">Toutes les versions</a></li>
+    </ul>
+    <p class="foot-legal">Catalogue fourni par l'API Deezer. Paroles fournies par LRCLIB. Kiwi est un projet personnel, sans but commercial, qui n'est affilié à aucun service de musique ou de vidéo. Il n'héberge aucun fichier audio. Logiciel libre sous licence GPL v3.</p>
+  </div>
+</footer>
+
+<!-- Navigation du bas, sur téléphone -->
+<nav class="bottom-nav" aria-label="Sections">
+  <a href="#accueil" data-nav="accueil"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M4 11 12 4l8 7v9h-5v-6H9v6H4z"/></svg>Accueil</a>
+  <a href="#fonctions" data-nav="fonctions"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="m12 3 2.6 5.6 6 .7-4.5 4.1 1.3 6L12 16.4 6.6 19.4l1.3-6L3.4 9.3l6-.7z"/></svg>Fonctions</a>
+  <a href="#captures" data-nav="captures"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><rect x="6.5" y="2.5" width="11" height="19" rx="2.5"/><path d="M10.5 18.5h3"/></svg>Captures</a>
+  <a href="#installer" data-nav="installer"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>Installer</a>
+  <a href="#questions" data-nav="questions"><svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="8.5"/><path d="M9.6 9.5a2.5 2.5 0 1 1 3.4 2.3c-.6.3-1 .8-1 1.5v.7M12 17h.01"/></svg>Questions</a>
+</nav>
+</body>
+</html>
