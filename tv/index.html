@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Installer Kiwi sur la télé</title>
+<meta name="description" content="Télécharger Kiwi, lecteur de musique gratuit, sur une télé ou un boîtier Android TV et Google TV.">
+<meta name="theme-color" content="#0E0F12">
+<meta name="color-scheme" content="dark">
+<link rel="icon" type="image/svg+xml" href="../kiwi-logo.svg">
+<link rel="stylesheet" href="../style.css">
+<script src="../main.js" defer></script>
+</head>
+<body class="tv-page">
+<!-- Page courte à taper depuis la télé (appli Downloader ou navigateur) :
+     adamsellin.github.io/kiwi-releases/tv. Grands boutons, la croix et OK
+     suffisent. Les liens visent l'APK de la dernière version par une
+     adresse fixe ; main.js ajoute le numéro de version et la taille. -->
+<main class="tv-page-inner">
+  <div class="tv-page-text">
+    <span class="wordmark tv-page-mark">kiwi</span>
+    <h1>Installer Kiwi<br>sur cette télé</h1>
+    <p><span data-version>Dernière version</span> · gratuit, sans pub, sans compte.<br>Choisissez à la croix, puis OK.</p>
+  </div>
+  <div class="tv-page-actions">
+    <a class="btn btn-primary tv-page-btn" data-download-tv data-autofocus href="https://github.com/AdamSellin/kiwi-releases/releases/latest/download/app-armeabi-v7a-release.apk" rel="noopener">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+      <span>Télécharger pour la TV<small>Presque toutes les télés</small></span>
+    </a>
+    <a class="btn tv-page-btn tv-page-other" data-download-universal href="https://github.com/AdamSellin/kiwi-releases/releases/latest/download/app-release.apk" rel="noopener">
+      <svg class="ic" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4v11m0 0-4.5-4.5M12 15l4.5-4.5M5 19h14"/></svg>
+      <span>Version universelle<small>Si la première ne s'installe pas · <span data-size>plus lourde</span></small></span>
+    </a>
+    <p class="tv-page-hint">Si la télé bloque l'installation : Paramètres › Applis › Sécurité et restrictions › Sources inconnues, puis activez l'appli qui a téléchargé le fichier.</p>
+    <a class="tv-page-site" href="../#tv">Toutes les explications sur le site</a>
+  </div>
+</main>
+</body>
+</html>
